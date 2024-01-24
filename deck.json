@@ -1,0 +1,176 @@
+[
+    {
+        "number": 1,
+        "name": "FOLLOW-UP",
+        "standardReq": "Medium Infantry or Heavy Infantry",
+        "standardObjective": "A trooper whose Unit Type is Medium or Heavy Infantry, with the enemy HVT model inside his Zone of Control, must spend a Short Skill and succeed at a WIP Roll.<br><b>Bonus</b>: If the trooper has LoF to the enemy HVT model the WIP Roll gets a +3 MOD.",
+        "extremeReq": "Medium Infantry or Heavy Infantry",
+        "extremeObjective": "A trooper whose Unit Type is Medium or Heavy Infantry, with the enemy HVT model inside his Zone of Control, must spend a Short Skill and succeed at a <b>WIP-3</b> Roll.<br><b>Bonus</b>: If the trooper has LoF to the enemy HVT model the WIP Roll will be without the negative MOD."
+    },
+    {
+        "number": 2,
+        "name": "NET-UNDERMINE",
+        "icons": "target",
+        "standardReq": "Veteran Troop, Elite Troop, or Chain of Command",
+        "standardObjective": "A trooper whose Troop Classification is Veteran or Elite Troop, or a trooper possessing the Chain of Command Special Skill, must spend a Short Skill and succeed at a WIP Roll while totally inside the enemy’s half of the game table.",
+        "extremeReq": "Veteran Troop, Elite Troop, or Chain of Command",
+        "extremeObjective": "A trooper whose Troop Classification is Veteran or Elite Troop, or a trooper possessing the Chain of Command Special Skill, must spend a Short Skill and succeed at a WIP Roll while totally inside the enemy’s <b>Deployment Zone</b>."
+    },
+    {
+        "number": 3,
+        "name": "HVT: IDENTITY CHECK",
+        "standardReq": "Biometric Visor, Multispectral Visor or Sensor",
+        "standardObjective": "A trooper with the Biometric Visor or the Multispectral Visor piece of Equipment with the enemy HVT model inside of his Zone of Control and LoF, or a trooper with the Sensor Special Skill with the enemy HVT model inside his Zone of Control, must spend a Short Skill and succeed at a WIP Roll.",
+        "extremeReq": "Biometric Visor, Multispectral Visor or Sensor",
+        "extremeObjective": "A trooper with the Biometric Visor or the Multispectral Visor piece of Equipment with the enemy HVT model inside of his Zone of Control and LoF, or a trooper with the Sensor Special Skill with the enemy HVT model inside his Zone of Control, must spend a Short Skill and succeed at a <b>WIP-6</b> Roll."
+    },
+    {
+        "number": 4,
+        "name": "CAPTURE",
+        "icons": "target",
+        "standardReq": "Veteran Troop, Elite Troop, or Chain of Command",
+        "standardObjective": "At the end of the game, a trooper in a non-Null State whose Troop Classification is Veteran or Elite Troop, or a trooper possessing the Chain of Command Special Skill, must be in base contact with an enemy trooper. The enemy must be in a Null state and be totally inside the enemy’s half of the game table.",
+        "extremeReq": "Veteran Troop, Elite Troop, or Chain of Command",
+        "extremeObjective": "At the end of the game, a trooper in a non-Null State whose Troop Classification is Veteran or Elite Troop, or a trooper possessing the Chain of Command Special Skill, must be in base contact with an enemy trooper. The enemy must be in a Null state and be totally inside the enemy’s <b>Deployment Zone</b>."
+    },
+    {
+        "number": 5,
+        "name": "HVT: KIDNAPPING",
+        "icons": "target",
+        "standardReq": "Veteran Troop, Elite Troop, or Chain of Command",
+        "standardObjective": "A trooper whose Troop Classification is Veteran or Elite Troop, or a trooper possessing the Chain of Command Special Skill, must be in CivEvac state with the enemy HVT at the end of the game.",
+        "extremeReq": "Veteran Troop, Elite Troop, or Chain of Command",
+        "extremeObjective": "A trooper whose Troop Classification is Veteran or Elite Troop, or a trooper possessing the Chain of Command Special Skill, must be in CivEvac state with the enemy HVT <b>and be totally inside their own half of the table</b> at the end of the game."
+    },
+    {
+        "number": 6,
+        "name": "HVT: INOCULATION",
+        "icons": "cross",
+        "standardReq": "Doctor or Paramedic",
+        "standardObjective": "A Doctor or Paramedic in base contact with the enemy HVT model must spend a Short Skill and succeed at a WIP+3 Roll. The player can use troops possessing Peripheral (Servant) to accomplish this Objective.",
+        "extremeReq": "Doctor or Paramedic",
+        "extremeObjective": "A Doctor or Paramedic in base contact with the enemy HVT model must spend a Short Skill and succeed at a <b>WIP-3</b> Roll. The player can use troops possessing Peripheral (Servant) to accomplish this Objective."
+    },
+    {
+        "number": 7,
+        "name": "SABOTAGE",
+        "icons": "gear",
+        "standardReq": "D-Charges",
+        "standardObjective": "To detonate a D-Charge on the targeted piece of scenery. It is not required to make an ARM Roll for the piece of scenery. When detonating the D-Charge, the rules for Scenery Structures do not apply.<br><b>Special</b>: The player must choose a Scenery Building or a Scenery Item, after solving the Initiative Roll, but before you start your Deployment, placed entirely inside the enemy’s half of the table. This piece of scenery will be considered the target of the Classified Objective.",
+        "extremeReq": "D-Charges",
+        "extremeObjective": "To detonate a D-Charge on the chosen pieces of scenery. It is not required to make ARM Rolls for the pieces of scenery. When detonating the D-Charges, the rules for Scenery Structures do not apply.<br><b>Special</b>: The player must choose <b>two</b> Scenery Buildings or Scenery Items, after making the Initiative Roll, but before you start your Deployment, placed entirely inside the enemy’s half of the table. These pieces of scenery will be considered the targets of the Classified Objective."
+    },
+    {
+        "number": 8,
+        "name": "EXPERIMENTAL DRUG",
+        "icons": "cross",
+        "standardReq": "Doctor or Paramedic",
+        "standardObjective": "To get an allied trooper recovered from Unconscious to Normal state by using the Doctor Special Skill, or by using a MediKit",
+        "extremeReq": "Doctor or Paramedic",
+        "extremeObjective": "To get <b>two</b> allied troopers recovered from Unconscious to Normal state by using the Doctor Special Skill, or by using a MediKit."
+    },
+    {
+        "number": 9,
+        "name": "HVT: ESPIONAGE",
+        "icons": "globe",
+        "standardReq": "Hacker",
+        "standardObjective": "A Hacker with the enemy HVT model inside his Zone of Control must spend a Short Skill and succeed at a WIP -3 Roll.",
+        "extremeReq": "Hacker",
+        "extremeObjective": "A Hacker with the enemy HVT model inside his Zone of Control must spend a Short Skill and succeed at a WIP -3 Roll. <b>The HVT may declare a Reset ARO even if the Skill is performed outside his LOF</b>."
+    },
+    {
+        "number": 10,
+        "name": "HVT: RETROENGINEERING",
+        "standardReq": "Engineer",
+        "standardObjective": "An Engineer in base contact with the enemy HVT model must spend a Short Skill and succeed at a WIP+3 Roll. The player can use troops possessing Peripheral (Servant) to accomplish this Objective.",
+        "extremeReq": "Engineer",
+        "extremeObjective": "An Engineer in base contact with the enemy HVT model must spend a Short Skill and succeed at a <b>WIP-3</b> Roll. The player can use troops possessing Peripheral (Servant) to accomplish this Objective."
+    },
+    {
+        "number": 11,
+        "name": "TEST RUN",
+        "icons": "gear",
+        "standardReq": "Engineer",
+        "standardObjective": "To succeed at an Engineer Roll on any allied trooper, getting it to recover 1 STR point.",
+        "extremeReq": "Engineer",
+        "extremeObjective": "To succeed at an Engineer Roll on <b>two</b> allied troopers, getting them to recover 1 STR point."
+    },
+    {
+        "number": 12,
+        "name": "NANOESPIONAGE",
+        "icons": "cross,gear",
+        "standardReq": "Engineer, Doctor or Paramedic",
+        "standardObjective": "An Engineer, Doctor, Paramedic or the trooper designated as DataTracker must be in Silhouette contact with an enemy Specialist Troop, spend a Short Skill and succeed at a Normal WIP Roll.",
+        "extremeReq": "Engineer, Doctor or Paramedic",
+        "extremeObjective": "An Engineer, Doctor, Paramedic or the trooper designated as DataTracker must be in Silhouette contact with an enemy Specialist Troop <b>in a non-Null state</b>, spend a Short Skill and succeed at a Normal WIP Roll."
+    },
+    {
+        "number": 13,
+        "name": "MAPPING",
+        "icons": "target,globe",
+        "standardReq": "Forward Observer or Hacker",
+        "standardObjective": "A Forward Observer or Hacker – in base contact with a Scenery Building or a Scenery Item placed entirely inside the enemy’s Deployment Zone – must spend a Short Skill and succeed at a WIP Roll.",
+        "extremeReq": "Forward Observer",
+        "extremeObjective": "A <b>Forward Observer</b> – in base contact with a Scenery Building or a Scenery Item placed entirely inside the enemy’s Deployment Zone – must spend a Short Skill and succeed at a WIP Roll."
+    },
+    {
+        "number": 14,
+        "name": "DATA SCAN",
+        "icons": "globe",
+        "standardReq": "Hacker",
+        "standardObjective": "The Hacker must spend one Short Skill of the Order and succeed at one WIP Roll against any enemy model inside his Zone of Control. The target may declare a Reset ARO no matter which Type of Troop it is (LI, MI, HI…) and even if the Data Scan is performed outside his LOF.",
+        "extremeReq": "Hacker",
+        "extremeObjective": "The Hacker must spend one Short Skill of the Order and succeed at one <b>WIP-3</b> Roll against any enemy model inside his Zone of Control. The target may declare a Reset ARO no matter which Type of Troop it is (LI, MI, HI…) and even if the Data Scan is performed outside his LOF."
+    },
+    {
+        "number": 15,
+        "name": "HVT: DESIGNATION",
+        "icons": "globe",
+        "standardReq": "Forward Observer or Spotlight Hacking Program",
+        "standardObjective": "The player must succeed at two Forward Observer Rolls or two Spotlight Hacking Program Rolls against the enemy HVT model. The player is authorized to perform this type of Attack against the HVT model.",
+        "extremeReq": "Forward Observer or Spotlight Hacking Program",
+        "extremeObjective": "The player must succeed at two Forward Observer Rolls or two Spotlight Hacking Program Rolls against the enemy HVT model <b>and against their own HVT model</b>. The player is authorized to perform this type of Attack against the HVT model."
+    },
+    {
+        "number": 16,
+        "name": "TELEMETRY",
+        "icons": "globe",
+        "standardReq": "Forward Observer or Spotlight Hacking Program",
+        "standardObjective": "To succeed at an Attack against an enemy trooper using Forward Observer or the Spotlight Hacking Program.",
+        "extremeReq": "Forward Observer or Spotlight Hacking Program",
+        "extremeObjective": "To succeed at <b>two</b> Attacks against an enemy trooper using Forward Observer or the Spotlight Hacking Program."
+    },
+    {
+        "number": 17,
+        "name": "PREDATOR",
+        "standardReq": "--",
+        "standardObjective": "At the end of the game the player must have killed at least two enemy troopers in Close Combat.<br><b>Bonus</b>: If at the end of the game the player has killed three enemy troopers in Close Combat, this objective gives 1 Objective Point in addition to the stated Objective Points for the scenario’s Classified Objectives (only if the player has less than 10 Objective Points).",
+        "extremeReq": "--",
+        "extremeObjective": "At the end of the game the player must have killed at least <b>three</b> enemy troopers in Close Combat.<br><b>Bonus</b>: If at the end of the game the player has killed four enemy troopers in Close Combat, this objective gives 1 Objective Point in addition to the stated Objective Points for the scenario’s Classified Objectives (only if the player has less than 10 Objective Points)."
+    },
+    {
+        "number": 18,
+        "name": "RESCUE",
+        "standardReq": "--",
+        "standardObjective": "A trooper must be in Casevac state with an allied trooper that is totally inside his own half of the game table and outside his own Deployment Zone at the end of the game.<br><b>Bonus</b>: If, at the end of the game, the trooper in Casevac state and the allied trooper are both totally inside the enemy’s half of the table, this objective gives 1 Objective Point in addition to the stated Objective Points for the scenario’s Classified Objectives (only if the player has less than 10 Objective Points).",
+        "extremeReq": "--",
+        "extremeObjective": "A trooper must be in Casevac state with an allied trooper that is totally inside the <b>enemy’s half of the game table</b> at the end of the game.<br><b>Bonus</b>: If, at the end of the game, the trooper in Casevac state and the allied trooper are both totally inside the enemy’s Deployment Zone, this objective gives 1 Objective Point in addition to the stated Objective Points for the scenario’s Classified Objectives (only if the player has less than 10 Objective Points)."
+    },
+    {
+        "number": 19,
+        "name": "IN EXTREMIS RECOVERY",
+        "icons": "cross",
+        "standardReq": "--",
+        "standardObjective": "A trooper in Silhouette contact with an Unconscious or Spawn-Embryo enemy trooper must spend a Short Skill and succeed at a WIP+3 Roll. After a successful WIP Roll the enemy trooper is removed from play.",
+        "extremeReq": "--",
+        "extremeObjective": "A trooper in Silhouette contact with an Unconscious or Spawn-Embryo enemy trooper must spend a Short Skill and succeed at a <b>WIP-3</b> Roll. After a successful WIP Roll the enemy trooper is removed from play."
+    },
+    {
+        "number": 20,
+        "name": "EXTREME PREJUDICE",
+        "standardReq": "--",
+        "standardObjective": "To perform a Coup de Grâce against an Unconscious or Spawn-Embryo enemy model.",
+        "extremeReq": "--",
+        "extremeObjective": "To perform a Coup de Grâce against <b>two</b> Unconscious or Spawn-Embryo enemy models."
+    }
+]

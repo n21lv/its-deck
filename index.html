@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>ITS10 Classified Deck</title>
+<meta name="description" content="Virtual ITS10 Classified Deck for Corvus Belli's Infinity 28mm miniatures skirmish wargame">
+<meta name="author" content="n21lv">
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="rolling_overlay">
+        <div class="rolling_text">Fetching results...</div>
+    </div>
+    <div style="width: 50%; float: left">
+        <fieldset>
+        <legend>Classified Objective generation</legend>
+        <form id="type_select">
+            <input type="radio" id="gen_type_manual" name="gen_type" value="manual"><label for="gen_type_manual">Manual input (dice rolls)</label><br>
+            <input type="radio" id="gen_type_random" name="gen_type" value="random" checked><label for="gen_type_random">Trust the robots (Random.org)</label>
+        </form>
+        </fieldset>
+    </div>
+    <div style="width: 50%; float: left">
+        <fieldset>
+        <legend>Classified Objective mode</legend>
+        <form id="mode_select">
+            <input type="radio" id="mode_standard" name="mode" value="standard" checked><label for="mode_standard">Standard</label><br>
+            <input type="radio" id="mode_extreme" name="mode" value="extreme"><label for="mode_extreme">Extreme</label>
+        </form>
+        </fieldset>
+    </div>
+    <div class="clearfix"></div>
+    <p></p>
+    <div id="type_manual" class="gen_type">
+        <label for="dice_rolls">Dice rolls (comma-separated): </label><input id="dice_rolls" name="dice_rolls" type="text" placeholder="3,5">
+        <input type="button" name="submit_dice_rolls" value="Go!" onclick="loadCards($('input[name=mode]:checked').val(), $('input#dice_rolls').val())">
+        <input type="button" name="reset_cards" value="Clear results" onclick="clearCards()">
+    </div>
+    <div id="type_random" class="gen_type">
+        <label for="card_count">Objective count: </label><input id="card_count" name="card_count" type="number" min="1" max="5" value="1">
+        <input type="button" name="submit_card_count" value="Roll the dice!" onclick="loadCards($('input[name=mode]:checked').val(), -1, $('input#card_count').val())">
+        <input type="button" name="reset_cards" value="Clear results" onclick="clearCards()">
+    </div>
+    <script>
+        $('div#type_random').show();
+    
+        $('input[name=gen_type]:radio').change(function() {
+            $('div.gen_type').hide();
+            $('div#type_' + $(this).val()).attr('style', 'display: block;');
+        });
+    
+        $('input[type=text],input[type=number]').keyup(function(e) {
+            if (e.which == 13) {
+                $('input[name=submit_' + $(this).attr('id') + ']').click();
+            }
+        });
+        
+        $('input[type=text],input[type=number]').on('focus', function() {
+            $(this).select();
+        });
+		
+        $(document).on({
+            ajaxStart: function() { $('.rolling_overlay').attr('style', 'display: block;'); },
+            ajaxStop: function() { $('.rolling_overlay').hide(); }    
+        });
+		
+		$(document).on('click', 'th.discard', function() {            
+			// finds and removes the discard event listener from the remaining card
+			let discardRow = $("table#objectives tbody[data-pair='" + $(this).closest('tbody').data('pair') + "'] th.discard");
+            if (!discardRow.hasClass('selected')) {
+                discardRow.addClass('selected');
+                $(this).closest('tbody').remove();
+            }
+		});
+    
+    </script>
+    
+    <table id="objectives">
+        <colgroup>
+            <col style="width: 5%;">
+            <col style="width: 10%;">
+            <col style="width: 25%;">
+            <col style="width: 48%;">
+            <col style="width: 12%;">
+        </colgroup>
+    </table>
+</body>
+</html>

@@ -1,0 +1,129 @@
+html {
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+}
+
+div.rolling_overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: #444444c0;
+}
+
+div.rolling_text {
+    z-index: 11;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 0.1rem;
+    padding-top: 4rem;
+    background: url('img/ajax.gif') 50% 50% no-repeat;
+}
+
+table, div, span, input {
+    font-size: 2rem;
+}
+
+div.clearfix {
+    clear: both;
+    overflow: auto;
+}
+
+div.gen_type {
+    display: none;
+}
+
+input[type=radio] {
+    margin: 0 0.5rem 1.5rem -0.5rem;
+}
+
+input[type=text] {
+    margin-bottom: 1rem;
+    width: 15rem;
+}
+
+table#objectives {
+    margin-top: 1rem;
+    table-layout: fixed;
+    display: none;
+}
+
+table#objectives tbody:nth-child(even) {
+    background-color: #ddd;
+}
+
+/*
+table#objectives tbody:nth-child(3n):not(:last-child) {
+    border-bottom: 1rem solid black;
+}
+*/
+
+table#objectives tbody.separator::before {
+	content: '';
+	display: block;
+	height: 3rem;
+	border: 0;
+	background-color: #fff;
+}
+
+table#objectives th {
+    text-align: left;
+}
+
+table#objectives, table#objectives th, table#objectives td {
+	border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+table#objectives th, table#objectives td {
+    border: 1px solid black;
+}
+
+table#objectives td {
+    vertical-align: top;
+}
+
+table#objectives th.card_icons, table#objectives .discard {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#objectives .discard {
+	border: 0;
+	background-color: #fff;
+}
+
+table#objectives th.discard:not(.selected) {
+	background-image: url('img/icons8-delete-group.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: 3rem;
+	cursor: pointer;
+}
+
+table#objectives span[class^=icon-] {
+    height: 3rem;
+    width: 3rem;
+    display: inherit;
+    background-repeat: no-repeat;
+    background-size: 3rem;
+}
+
+span.icon-cross {
+    background-image: url('img/icon-cross.png');
+}
+
+span.icon-globe {
+    background-image: url('img/icon-globe.png');
+}
+
+span.icon-gear {
+    background-image: url('img/icon-gear.png');
+}
+
+span.icon-target {
+    background-image: url('img/icon-target.png');
+}
