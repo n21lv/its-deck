@@ -1,2 +1,2 @@
 # its-deck
-Virtual ITS deck for Infinity wargame by Corvus belli
+Virtual ITS Classified deck for Infinity wargame by Corvus belli
